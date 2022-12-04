@@ -1,0 +1,29 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "publication",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Atmosphere",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Velit dolor duis dolore et tempor. Magna reprehenderit veniam aliquip mollit duis adipisicing do ipsum pariatur aute eiusmod nisi exercitation ipsum quis. Occaecat consequat fugiat velit sint excepteur Lorem aliqua ipsum culpa.",
+        "spans": []
+      }
+    ]
+  }
+}

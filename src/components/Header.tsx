@@ -3,9 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logoImage from "../public/images/logo.svg"
 import { SignInButton } from './SigInButton'
+import { useRouter } from 'next/router'
+import { ActiveLink } from './ActiveLink'
 
 export function Header() {
   const theme = useTheme()
+  const { asPath } = useRouter()
 
   return (
     <Container 
@@ -26,27 +29,18 @@ export function Header() {
     >
       <Image src={logoImage} alt="" width={108} height={30} />
       <HStack marginLeft='5rem' height='5rem'>
-        <Link href='/' >
-          <Text 
+        <ActiveLink href='/' >
+          <Text
             variant='headerLink' 
-            _after={{ 
-              content: '""',
-              height: '3px',
-              borderRadius: '3px 3px 0 0',
-              width: '100%',
-              position: 'absolute',
-              bottom: '1px',
-              left: 0,
-              background: '#eba417',
-              }}
+            _after={{}}
           >
             Home
           </Text>
-        </Link>
+        </ActiveLink>
 
-        <Link href='/post'>
+        <ActiveLink href='/posts' prefetch>
           <Text variant='headerLink'>Posts</Text>
-        </Link>
+        </ActiveLink>
       </HStack>
       <SignInButton />
     </Box>

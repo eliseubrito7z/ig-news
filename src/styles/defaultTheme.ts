@@ -30,6 +30,7 @@ export const defaultTheme = extendTheme({
 
     gray100: '#e1e1e6',
     gray300: '#a8a8b3',
+    gray700: '#323238',
     gray800: '#29292e',
     gray850: '#1f2729',
     gray900: '#121214',
@@ -83,7 +84,47 @@ export const defaultTheme = extendTheme({
           }
         }
       },
-      
+      postText: {
+        color: '#a8a8b3',
+        marginTop: '0.5rem',
+        lineHeight: 1.625,
+
+      }
+    },
+    Link: {
+      variants: {
+        postLink: {
+          display: 'block',
+          textDecoration: 'none',
+
+          '&+a': {
+            marginTop: '2rem',
+            paddingTop: '2rem',
+            borderTop: '1px solid #323238',
+          },
+
+          time: {
+            fontSize: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            color: '#a8a8b3',
+          },
+
+          strong: {
+            display: 'block',
+            fontSize: '1.5rem',
+
+            marginTop: '1rem',
+            lineHeight: '2rem',
+
+            transition: 'color 0.2s'
+          },
+
+          '&:hover strong': {
+            color: '#eba417',
+          }
+        }
+      }
     }
   }
 })
